@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        /* Background Warna */
+        #background-warna {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 33.33vh; /* Membagi tinggi layar menjadi 3 bagian */
+            background-color: #9dacb7;
+            text-align: center;
+            line-height: 33.33vh;
+            color: #fff;
+        }
+
+        /* Background Campuran */
+        #background-campuran {
+            position: absolute;
+            top: 33.33vh; /* Posisi di bawah background-warna */
+            left: 0;
+            width: 100%;
+            height: 33.33vh;
+            background: linear-gradient(80deg, #3498db, #eb0eff);
+            text-align: center;
+            line-height: 33.33vh;
+            color: #fff;
+        }
+
+        /* Background Gambar */
+        #background-gambar {
+            position: absolute;
+            top: 66.66vh; /* Posisi di bawah background-campuran */
+            left: 0;
+            width: 100%;
+            height: 33.33vh;
+            background: url('https://assets.hongkiat.com/uploads/ramadan-desktop-wallpapers/4k/original/7.jpg') center center/cover no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Warna -->
+    <div id="background-warna">Background Warna</div>
+
+    <!-- Background Campuran -->
+    <div id="background-campuran">Background Campuran</div>
+
+    <!-- Background Gambar -->
+    <div id="background-gambar"></div>
+</body>
+</html>
