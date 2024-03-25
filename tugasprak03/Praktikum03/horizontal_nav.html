@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Navigation Bar</title>
+    <style>
+         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 20;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            overflow: hidden;
+            background-color: #adabab;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            color: #111;
+            text-align: center;
+            padding: 16px 20px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #111;
+            color: white;
+            border-bottom: 4px solid #02acea;
+        }
+
+        nav ul li a.active {
+            background-color: #02acea;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="active">HOME</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">PROJECT</a></li>
+            <li><a href="#">ABOUT</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
